@@ -1,27 +1,29 @@
-# The Foodie API project
+# CalendarJS
 
-This particular project has a special place in my heart because this was my first real-world pure javascript project.
-
----
-
-![Demo of the foodie app](markdownimg.png)
+This project was challanging to build with only pure javascript. Using a front-end framework like React or Angular could have made it a lot easier, but that was not the point of this exercise.
+The main goal was to polish and really challange my javascript skills.
 
 ---
 
-### [See live version](https://foodie-app-ruben.netlify.app/#5ed6604591c37cdc054bcd09)
+![Demo of the foodie app](calendar-demo.png)
+
+---
+
+### [See live version](https://calendarjs-app-ruben.netlify.app/)
 
 ### Description
 
-The Foodie app is a free-to-use seemingly simple web application, but with advanced features.  
-Users can search for any dish/ingredient, and view the search results. You as a user also can upload your recipe, and add and delete recipes from your 'bookmarks', both of these are stored in local storage, so you can come back later and still see said recipes. The UX was enhanced by implementing pagination, so only a limited amount of search result will show up at first, not overcrowding the view height.  
-Foodie utilizes a great third-party API called Forkify-API/v2, and the core file architecture is based on the so-called MVC model.
+This CalendarJS app is a free-to-use seemingly simple web application, but with advanced features.  
+Users can add events and those events will be saved to local storage, so they can re-visit the site and still see their events. Events can be updated and deleted when clicking on them.
+CalendarJS utilizes a 2 great third-party libraries called Date-FNS and UUID, and the core file architecture is based on the so-called MVC model.
 
 ### Features
 
-- Users can search for an ingredient/recipe and see the search results accordingly.
-- Users can upload their recipes, which will be saved in local storage.
-- Users can bookmark the recipes that they like so that they can view them later in the 'bookmarks' dropdown
-- Pagination for the search results was implemented to enhance the UX
+- Users are seeing the current month and date on page load
+- Users can add all-day and time specified events when hovering a day and clicking on the '+' button
+- Users can edit and delete events
+- Events are saved to local storage, so they can revisit the site and still see their events
+- Events can not overflow, if they would reach outside the parent container a 'See More +2' button will appear instead
 
 ### Architecture
 
@@ -30,19 +32,22 @@ MVC (Model-View-Controller) is a pattern in software design commonly used to imp
 ### Technologies used
 
 - HTML5
-- CSS3 - Sass
+- CSS3
 - Javascript
 - Parcel
 - NPM
+- UUID
+- Date-FNS
 
 ### What did I learn?
 
 This project helped me improve my skills in multiple areas.
 
-- I gained experience using and implementing the MVC software design pattern
-- I leveled up my UI/UX design skills
-- This was the first time I got myself into using Sass and having a fundamental CSS file structure
+- I got more comfortable using npm and installing third-party libraries to accelarate my workflow. I used UUID for generating uniqe IDs and Date-FNS to make working with dates easier. These libraries were really great to work with!
+- I was forced to manage 'state' in vanilla javascript.
+- Taking advantage of the short circuting abilities of && and || instead of using the ternary operator.
+- The biggest challange was to calculate if the events of a day are overflowing or not, and then dynamically displaying the 'Show More +2' button
 
 ### Credit
 
-_The project architecture and design were heavily inspired by [Jonas Schmedtmann](https://twitter.com/jonasschmedtman)_
+_The project was inspired by [Kyle](https://courses.webdevsimplified.com/)_
