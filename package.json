@@ -1,0 +1,27 @@
+{
+  "name": "calendarjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "parcel": "2.6.0"
+  },
+  "dependencies": {
+    "date-fns": "^2.21.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PetruczaRuben/CalendarJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PetruczaRuben/CalendarJS/issues"
+  },
+  "homepage": "https://github.com/PetruczaRuben/CalendarJS#readme"
+}
