@@ -9,7 +9,7 @@ The main goal was to polish and really challange my javascript skills.
 
 ---
 
-### [See live version](https://calendarjs-app-ruben.netlify.app/)
+### [See live version](https://calendarjs-app.netlify.app/)
 
 ### Description
 
